@@ -31,6 +31,7 @@ router.post("/login", async (req, res) => {
       { expiresIn: "1d" },
       (err, token) => {
         if (err) res.status(401).json("Auth failed");
+        console.log(token);
         res.header("auth", token).json({ token });
       }
     );
