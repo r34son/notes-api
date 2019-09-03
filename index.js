@@ -17,4 +17,6 @@ app.get("/", (req, res) => res.send("api running"));
 app.use("/api", authRoute);
 app.use("/api/notes", noteRoute);
 
-app.listen(5000, () => console.log("server is up on port 5000!"));
+app.listen(process.env.PORT || 5000, () =>
+  console.log("server is up on port 5000!")
+);
