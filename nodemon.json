@@ -1,0 +1,6 @@
+{
+  "env": {
+    "TOKEN_SECRET": "secretkey",
+    "MONGODB_PW": "11211121y"
+  }
+}
